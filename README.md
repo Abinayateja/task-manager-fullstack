@@ -1,6 +1,7 @@
 # 🚀 Task Management System - Full Stack Application
 
 > A secure, full-stack task management application with JWT authentication, role-based access control, and RESTful API design.
+> Documentation and structure were accelerated using modern developer tools, with full ownership of system design and implementation.
 
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
@@ -329,7 +330,9 @@ NODE_ENV=development
 
 # Database Connection
 # Format: postgresql://username:password@host:port/database?schema=public
-DATABASE_URL="postgresql://eff009013789b5abdd4ab4f2c34dddf1fbc1406c5d2bbbddc99a5fa835aee4b3:sk_pPPFJLvZJ7zkVBKRXvf6G@db.prisma.io:5432/postgres?sslmode=require"
+DATABASE_URL="postgresql://username:password@localhost:5432/taskdb"
+> Example only. Use your own database credentials. Never commit real secrets.
+
 
 # JWT Configuration
 # IMPORTANT: Use a strong, random secret key in production
@@ -1018,6 +1021,14 @@ const corsOptions = {
 
 ---
 
+## 🧠 Design Tradeoffs & Scope Decisions
+
+- Admin users are allowed to manage other users to meet the assignment scope.
+- Advanced role hierarchies (e.g., SUPER_ADMIN) were intentionally excluded.
+- Redis, Docker, and rate limiting are discussed but not implemented to keep the core system focused and readable.
+
+---
+
 ## 📈 Future Scalability Considerations
 
 While this application is built for immediate functionality, here are scalability improvements that could be implemented as the user base grows:
@@ -1123,6 +1134,7 @@ Day 2 (6 hours): Frontend UI, integration, testing, documentation
 Gaddam Abinayateja
 📧 Email: gaddamabinayateja@gmail.com
 💼 LinkedIn: https://www.linkedin.com/in/abinaya-teja-gaddam/
+🌐 Portfolio: https://portfolio533.netlify.app
 💻 GitHub: https://github.com/Abinayateja
 
 📄 License
